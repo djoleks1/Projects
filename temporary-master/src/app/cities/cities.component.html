@@ -1,0 +1,14 @@
+
+<div class="pretraga">
+    <label class="box">
+      <input [(ngModel)]="query" (input)="handleChange()" placeholder="Search..."/>
+    </label>
+  </div>
+  <div>
+    <ul *ngIf="cities.length > 0">
+      <li  *ngFor="let city of cities"> 
+        <a  routerLink="/city/{{city.title}}"> {{city.title}}</a>
+        <hr>
+      </li>
+    </ul>
+  </div>

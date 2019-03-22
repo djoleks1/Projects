@@ -1,0 +1,89 @@
+table, td, th {  
+   
+    text-align: center;
+  }
+  
+
+  .title{
+      width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .time{
+    font-weight: bold;
+  }
+
+  .podaci{
+      text-align: left;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+
+  img{
+    width:40px;
+    height:40px;
+  }
+
+  .datum{
+      
+      text-align: center;
+      font-weight: bold;
+  }
+
+  .wind {
+	margin-top:10px;
+}
+.wind .dir {
+	display:inline-block;
+	width:1em;
+	height:1em;
+	background-image:url('https://www.metaweather.com/static/img/windarrow.svg');
+	background-size: 100% 100%;
+}
+.wind .dir-nne {transform: rotate(22.5deg)}
+.wind .dir-ne {transform: rotate(45deg)}
+.wind .dir-ene {transform: rotate(67.5deg)}
+.wind .dir-e {transform: rotate(90deg)}
+.wind .dir-ese {transform: rotate(112.5deg)}
+.wind .dir-se {transform: rotate(135deg)}
+.wind .dir-sse {transform: rotate(157.5deg)}
+.wind .dir-s {transform: rotate(180deg)}
+.wind .dir-ssw {transform: rotate(202.5deg)}
+.wind .dir-sw {transform: rotate(225deg)}
+.wind .dir-wsw {transform: rotate(247.5deg)}
+.wind .dir-w {transform: rotate(270deg)}
+.wind .dir-wnw {transform: rotate(292.5deg)}
+.wind .dir-nw {transform: rotate(315deg)}
+.wind .dir-nnw {transform: rotate(337.5deg)}
+
+.button {
+    background-color: cornflowerblue; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12%;
+    width: 160px; 
+  }
+
+.pozicion{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

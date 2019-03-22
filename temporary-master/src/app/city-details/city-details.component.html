@@ -1,0 +1,38 @@
+<div *ngIf="city"> 
+  
+  <p>Lattitude and longitude: <span>{{city.latt_long}}</span></p>
+  <p>Location type: <span>{{city.location_type}}</span></p>
+  <p>WoeID: <span>{{city.woeid}}</span></p>
+  <p>Time: <span>{{city.timezone_name}}</span></p>
+  <h1 class="title">{{city.title}}</h1>
+  
+</div>
+
+<table>
+    <tr >
+        <td *ngFor="let day of threeDays">
+            <span class="datum"> {{day.applicable_date}}</span>
+        </td>
+      </tr>
+  <tr>
+    <td  *ngFor="let day of threeDays"> 
+        <img src="https://www.metaweather.com/static/img/weather/{{day.weather_state_abbr}}.svg">&nbsp;
+        <span>{{day.weather_state_name}}</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="podaci" *ngFor="let day of threeDays">
+      <p>Max: 
+        <span> {{day.max_temp}} *C</span>
+      </p>
+      <p>Min: 
+          <span> {{day.min_temp}} *C</span>
+        </p>
+        <p class="wind">
+            <span class="dir dir-ne"></span><span>{{day.wind_direction_compass}}</span>
+          </p>
+</table>
+<div class="pozicion">
+<button class="button" (click)="goBack()">Back</button>
+</div>
+ 
